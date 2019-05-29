@@ -1,0 +1,26 @@
+{% extends "study/header.html" %}
+{% load static %}
+{% block content %}
+<style>
+    .login-html{
+        color: #fff;
+    }
+</style>
+<div class="login-wrap">
+    <div class="login-html">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+        <input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab"></label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <form enctype="multipart/form-data" method="POST">
+                    {% csrf_token %}
+                    {{user_form.as_p}}
+                    {{profile_form.as_p}}
+                    <input type="submit" name="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

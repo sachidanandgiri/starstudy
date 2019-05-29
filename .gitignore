@@ -1,0 +1,4 @@
+starstdy/study/migrations
+*.sqlite3
+*.sql
+**/__pycache__
