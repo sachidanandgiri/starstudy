@@ -1,4 +1,4 @@
-Django==2.2.1
+Django==2.2.27
 mysqlclient==1.4.2
 Pillow==5.3.0
 pytz==2019.1
